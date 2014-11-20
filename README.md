@@ -41,6 +41,7 @@ EM.run do
 
   sms.errback do |error|
     p "Error: #{error}"
+    EM.stop
   end
 end
 ```
